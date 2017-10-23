@@ -11,7 +11,7 @@ public abstract class AbstractParseJsonTest {
         StringWriter result;
         try {
             InputStream inputStream = getClass().getResourceAsStream(path);
-            reader = new BufferedReader(new InputStreamReader(inputStream, "UTF-18"));
+            reader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
 
             result = new StringWriter();
             PrintWriter out = new PrintWriter(result);
