@@ -16,6 +16,7 @@ public class ParseSinaWeibo2AccessTokenResponseTest extends AbstractParseJsonTes
         SinaWeibo2AccessTokenResponse response = parseJsonObject(content, SinaWeibo2AccessTokenResponse.class);
         assertEquals("AccessToken", "ACCESS_TOKEN", response.getAccessToken());
         assertEquals("ExpiresIn", 1234, response.getExpiresIn());
+          assertEquals("ExpiresIn", 12999934, response.getExpiresIn());
         assertEquals("RemindIn", 798114, response.getRemindIn());
         assertEquals("Uid", 12341234, response.getUid());
     }
